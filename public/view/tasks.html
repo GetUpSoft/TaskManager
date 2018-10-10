@@ -1,0 +1,50 @@
+﻿
+<button class="btn btn-primary" type="button">
+    Row <span class="badge badge-lg">{{vm.tasks.length }}</span>
+</button>
+
+<table class="table ">
+
+    <tbody>
+        <tr>
+            <th scope="col"> <span class=" input-group"> </span> </th>
+            <th scope="col">Task</th>
+            <th scope="col">Request</th>
+            <th scope="col">Technology  </th>
+            <th scope="col">Summery</th>
+            <th scope="col">Client</th>
+            <th scope="col">Track</th>
+            <th scope="col">Comentario</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Date Get </th>
+            <th scope="col">Date Int</th>
+            <th scope="col">Date End</th>
+            <th scope="col"> Progress</th>
+        </tr>
+        <tr ng-repeat=" task in vm.tasks">
+            <th scope="row"> <input type="checkbox" ng-click="deleteTodo(task._id)">{{vm.i==+0}}</th>
+            <td>{{task.task_id}}</td>
+            <td>{{task.tipo_task}}</td>
+            
+            <td >Technology  </td>
+            <td>{{task.summary}}</td>
+            <td >Client</td>
+            <td >Track</td>
+            <td >Comentario</td>
+            <td >Hora</td>
+            <td >Date Get </td>
+            <td >Date Int</td>
+            <td >Date End</td>
+            <td>
+                <progress class="progress-bar progress-bar-success" value={{vm.tasks.length}} max="100">
+                    <span class="sr-only">{{vm.tasks.length}}% Complete (success)</span>
+                </progress>
+             
+            </td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+

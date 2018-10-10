@@ -1,0 +1,83 @@
+﻿<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="myApp"  >
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Node/Angular Todo App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        html {
+            overflow-y: scroll;
+        }
+
+        body {
+            padding-top: 20px;
+        }
+
+        #todo-list {
+            margin-bottom: 30px;
+        }
+
+        #todo-form {
+            margin-bottom: 50px;
+        }
+
+        article {
+            margin: 50px;
+        }
+    </style>
+
+    <!-- SPELLS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script> <!-- load up our controller -->
+
+    <script src="js/controllers/main.js"></script> <!-- load up our controller -->
+    <script src="js/lib/angular-route.min.js"></script> <!-- load up our controller -->
+    <script src="js/services/todos.js"></script> <!-- load our todo service -->
+    <script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController as vm">
+    <header>
+        <ng-include src="'/view/nav.html'"></ng-include>
+        <!-- HEADER AND TODO COUNT -->
+        <div class="jumbotron text-center">
+            <h1>Tasks</h1>
+           
+        </div>
+    </header>
+    <main>
+        <article>
+            <div ng-view>{{ vm.message }}</div>
+            <div class="class=" container" ">
+                <p class="text-center" ng-show="vm.loading">
+                    <span class="fa fa-spinner fa-spin fa-3x"></span>
+                </p>
+            </div>
+        </article>
+    </main>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

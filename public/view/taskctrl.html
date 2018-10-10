@@ -1,0 +1,68 @@
+﻿<from>      
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">#</span>
+        </div>
+        <input name="Task" type="number" placeholder="Task.123456789" class="form-control"  ng-model="vm.froms.task_id">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Request</span>
+        </div>
+          <input name="tipo_task" type="text" class="form-control" placeholder="Tipo de Request" ng-model="vm.froms.tipo_task">
+    </div>
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Summary</span>
+        </div>
+        <input name="summary" type="text" class="form-control" placeholder="summary" ng-model="vm.froms.summary">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Client</span>
+        </div>
+         <input name="emiter" type="text" class="form-control" placeholder=" Name Cliente" ng-model="vm.froms.emiter">
+    </div>
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">EXT.#</span>
+        </div>
+        <input type="number" placeholder="123456789" class="form-control" ng-model="vm.froms.contact">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Technology</span>
+        </div>
+        <input type="number" placeholder="Technology" class="form-control" ng-model="vm.froms.tech_task">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Worker</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Name Worker" ng-model="Vm.Worker">
+    </div>
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Status Line</span>
+        </div>
+        <input type="text" class="form-control" id="repeatSelect" ng-model="Vm.froms.name">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Comment</span>
+        </div>
+         <input type="text" class="form-control" placeholder="Comment" ng-model="vm.froms.comment_track">
+    </div>
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Hora</span>
+        </div>
+        <input name="Horas" class="form-control" type="number" placeholder="Comment" ng-model="vm.froms.Horas">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"> Date Get</span>
+        </div>
+        <input name="date_re" class="form-control" type="date" ng-model="vm.froms.date_re">
+
+    </div>
+    <div class="md-form input-group">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"> Date Int </span>
+        </div>
+        <input name="date_bg" type="date" class="form-control" ng-model="vm.froms.date_bg">
+        <div class="input-group-prepend" id="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"> Date End</span>
+        </div>
+         <input name="date_end" class="form-control" type="date" ng-model="vm.froms.date_end">
+    </div>
+    <button type="submit" class="btn form-control btn-primary  " ng-click="vm.addtasks()">ADD TASK</button>
+</from>

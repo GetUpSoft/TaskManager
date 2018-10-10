@@ -1,0 +1,3 @@
+C:\Users\yoeli\Documents\Dev Repo\Task Manager\obj\Debug\TaskManager.njsprojAssemblyReference.cache
+C:\Users\yoeli\Documents\Dev Repo\Task Manager\obj\Debug\TaskManager.njsproj.CoreCompileInputs.cache
+C:\Users\yoeli\Documents\Dev Repo\Task Manager\bin\Microsoft.NodejsTools.WebRole.dll
